@@ -1,0 +1,124 @@
+/* gamestyles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(90deg, #5c94cc, #4d8394, #5c6b99);
+    overflow: hidden; /* Prevents scrolling */
+}
+
+header, footer {
+            text-align: center;
+            font-family: "Perpetua Titling MT", serif;
+            font-size: 1.4rem;
+            background-color: transparent;
+            color: #c3c5b5;
+            padding: 15px;
+        }
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: transparent;
+    overflow: hidden;
+}
+
+/* Parallax background */
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Wider than the container to allow scrolling */
+    height: 500px;
+    background-image: url('bbackground.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: parallaxScroll 10s linear infinite; /* Smooth scrolling */
+}
+
+@keyframes parallaxScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+#wave {
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    width: 150%;
+    height: 300px; /* Adjust height to fit visually */
+    background: url('Waves.gif') no-repeat; /* Replace with the actual wave GIF path */
+    background-size: contain;
+    z-index: 1; /* Place behind the surfer */
+    animation: waveAnimation 4s linear infinite;
+}
+
+#character {
+    position: absolute;
+    bottom: 50px;
+    left: 125px;
+    width: 175px; /* Width of one frame */
+    height: 175px; /* Height of one frame */
+    background: url('Surfer.gif') no-repeat; /* Replace with your GIF */
+    background-size: 100%; /* Adjust to fit the total frames in the GIF */
+    z-index: 2; /* Place above the wave */
+}
+
+/* Jump class for animation */
+.jump {
+    animation: jumpAnimation 0.6s ease-out;
+}
+
+@keyframes jumpAnimation {
+    0% { bottom: 0; }
+    50% { bottom: 150px; }
+    100% { bottom: 0; }
+}
+
+#obstacle {
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: url('rocks1.png') no-repeat center/contain; /* Replace with rock image */
+    animation: moveObstacle 3s linear infinite;
+    z-index: 2; /* Place above the wave */
+}
+
+@keyframes moveObstacle {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+footer {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #272744; /* Dark Gray */
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+

@@ -1,0 +1,44 @@
+/* General Settings */
+   
+    body {
+        background: linear-gradient(90deg, #5c94cc, #4d8394, #5c6b99);
+        height: 100vh; /* Ensure it covers the full viewport height */
+        margin: 0;
+        padding: 0;    
+    color: #333333; /* Dark Gray */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Button */
+button {
+    background-color: #e6a82e; /* Orange-Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #efda87; /* Deep Red */
+}
+
+/* Footer */
+footer {
+    background-color: #272744; /* Dark Gray */
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}

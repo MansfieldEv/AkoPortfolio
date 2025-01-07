@@ -1,0 +1,85 @@
+/* General Settings */
+   
+body {
+    background: linear-gradient(90deg, #5c94cc, #4d8394, #5c6b99);
+    height: auto; /* Allows the body to grow */
+    overflow-y: auto; /* Ensures scrolling is enabled */
+    margin: 0;
+    padding: 0;    
+color: #333333; /* Dark Gray */
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.container {
+    min-height: 100vh; /* Ensures the container is at least the height of the viewport */
+    height: auto; /* Allows it to grow as needed */
+}
+
+        p {
+            font-family: Arial, sans-serif; /* Font style */
+            font-size: 1.2rem; /* Font size */
+            line-height: 1.5; /* Spacing between lines */
+            text-align: justify; /* Align text (left, right, center, or justify) */
+            color: #333; /* Text color */
+            margin: 20px; /* Spacing outside the paragraph */
+            padding: 10px; /* Spacing inside the paragraph */
+            background-color: transparent;/* Background color for the paragraph */
+            border-radius: 5px; /* Rounded corners for the border */
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            align-items: center; /* Center vertically */
+            text-align: justify; /* Align text (left, right, center, or justify) */
+            color: #c3c5b5;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 1rem;
+            align-items: center; /* Center vertically */
+            justify-content: flex-start; /* Align to the left */
+            color: #00000000;
+        }
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Button */
+button {
+    background-color: #e6a82e; /* Orange-Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #efda87; /* Deep Red */
+}
+
+/* Footer */
+footer {
+    position: relative;
+    top: 40px; left: 540px;
+    bottom: 0;
+    right: 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    display: flex;
+    justify-content: flex-end; /* Centers the icons horizontally */
+    align-items: center; /* Centers content vertically within the footer */
+    background: transparent;
+    padding: 20px;
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+       
